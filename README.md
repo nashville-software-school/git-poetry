@@ -11,7 +11,7 @@ Click the **create** button, and it should set up a repository and navigate to t
 
 Each member of the group should visit the repository url, click on the green **CODE** button, then under SSH, copy the git URL.
 
-Open your terminal and navigate to your workspace. On the command line, type: `git clone {pasted_git_url_goes_here}`
+Open your terminal and navigate to your workspace. On the command line, type: `git clone pasted_git_url_goes_here` 
 
 CD into the new folder and note that there's a readme.md file there. Now everyone is set up to collaborate with this repo.
 
@@ -57,6 +57,6 @@ Two teammates should each create a new branch. One should name it `make-violets-
 
 The first teammate (violet) should add, commit, push and merge just as we did above. Then the next teammate (orange) should. When they try to do a pull request, there will be a conflict. Git can't decide which of these changes to use, so we will have to resolve this manually before we can merge it into main. The second teammate (who got the conflict) will do this locally, using the terminal and VSCode.
 
-The first step is to open the terminal, then switch to main branch by typing `git checkout main`. Then type `git pull origin main` to pull down the latest, which includes the other teammate's change. Then switch to your branch with `git checkout make-violets-orange`. Now, you should merge main into your branch with `git merge main`, which will cause a conflict. Both changes are in the text file. One version is between <<<< and ====, and the other is between ==== and >>>>. Make change to the file, removing these special characters and leaving only the exact text that we want to use. You can also use the helpful links that appear before that section to keep one change, the other, or both. Once you've made this decision, you can add, commit and then push as usual. Then you should be able to do a successful pull request in Github, and then your conflict is totally resolved.
+The first step is to open the terminal, then switch to main branch by typing `git checkout main`. Then type `git pull origin main` to pull down the latest, which includes the other teammate's change. Then switch to your branch with `git checkout make-violets-orange`. Now, you should merge main into your branch with `git merge main`, which will cause a conflict. Open up the source control tab by clicking the tree-like icon on the left, below the magnifying glass. Both changes are in the text file. One version is between <<<< and ====, and the other is between ==== and >>>>. Make change to the file, removing these special characters and leaving only the exact text that we want to use. You can also use the helpful links that appear before that section to keep one change, the other, or both. Once you've made this decision, you can add, commit and then push as usual. Then you should be able to do a successful pull request in Github, and then your conflict is totally resolved.
 
 
